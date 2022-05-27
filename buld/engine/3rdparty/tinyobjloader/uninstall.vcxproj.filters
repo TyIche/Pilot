@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\piccolo\Pilot\buld\CMakeFiles\12c4521e0fdd5135c00d2cb0c770f198\uninstall.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\piccolo\Pilot\engine\3rdparty\tinyobjloader\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\piccolo\Pilot\buld\engine\3rdparty\tinyobjloader\CMakeFiles\uninstall" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{7AC096CB-50F3-3C30-BECA-A20B67E86167}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

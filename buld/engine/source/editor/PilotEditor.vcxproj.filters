@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\editor\source\axis.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\editor\source\editor.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\editor\source\editor_file_service.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\editor\source\editor_global_context.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\editor\source\editor_input_manager.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\editor\source\editor_scene_manager.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\editor\source\editor_ui.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\editor\source\main.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\editor\include\axis.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\editor\include\editor.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\editor\include\editor_file_service.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\editor\include\editor_global_context.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\editor\include\editor_input_manager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\editor\include\editor_scene_manager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\editor\include\editor_ui.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\piccolo\Pilot\engine\source\editor\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="D:\piccolo\Pilot\engine\source\editor\resource\PilotEditor.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{B629CF54-AF1B-3963-9614-E9CBE9A105D0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{DADCD2F8-3EBF-3844-84B2-775BF15F9989}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{9FB60DC1-9A09-385E-A439-92AF354C71AA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

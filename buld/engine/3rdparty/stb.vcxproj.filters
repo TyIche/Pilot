@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\piccolo\Pilot\engine\3rdparty\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\piccolo\Pilot\engine\3rdparty\stb\stb_c_lexer.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\piccolo\Pilot\engine\3rdparty\stb\stb_connected_components.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\piccolo\Pilot\engine\3rdparty\stb\stb_divide.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\piccolo\Pilot\engine\3rdparty\stb\stb_ds.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\piccolo\Pilot\engine\3rdparty\stb\stb_dxt.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\piccolo\Pilot\engine\3rdparty\stb\stb_easy_font.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\piccolo\Pilot\engine\3rdparty\stb\stb_herringbone_wang_tile.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\piccolo\Pilot\engine\3rdparty\stb\stb_hexwave.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\piccolo\Pilot\engine\3rdparty\stb\stb_image.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\piccolo\Pilot\engine\3rdparty\stb\stb_image_resize.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\piccolo\Pilot\engine\3rdparty\stb\stb_image_write.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\piccolo\Pilot\engine\3rdparty\stb\stb_include.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\piccolo\Pilot\engine\3rdparty\stb\stb_leakcheck.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\piccolo\Pilot\engine\3rdparty\stb\stb_rect_pack.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\piccolo\Pilot\engine\3rdparty\stb\stb_sprintf.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\piccolo\Pilot\engine\3rdparty\stb\stb_textedit.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\piccolo\Pilot\engine\3rdparty\stb\stb_tilemap_editor.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\piccolo\Pilot\engine\3rdparty\stb\stb_truetype.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\piccolo\Pilot\engine\3rdparty\stb\stb_voxel_render.h">
+      <Filter>Header Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{4D9E9BD1-EAE3-3FC0-A283-447D71DCCC69}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

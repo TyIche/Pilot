@@ -1,0 +1,659 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\core\log\log_system.cpp">
+      <Filter>core\log</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\core\math\axis_aligned.cpp">
+      <Filter>core\math</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\core\math\math.cpp">
+      <Filter>core\math</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\core\math\matrix3.cpp">
+      <Filter>core\math</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\core\math\matrix4.cpp">
+      <Filter>core\math</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\core\math\quaternion.cpp">
+      <Filter>core\math</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\core\math\vector2.cpp">
+      <Filter>core\math</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\core\math\vector3.cpp">
+      <Filter>core\math</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\core\math\vector4.cpp">
+      <Filter>core\math</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\core\meta\meta_example.cpp">
+      <Filter>core\meta</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\core\meta\reflection\reflection.cpp">
+      <Filter>core\meta\reflection</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\core\meta\reflection\reflection_register.cpp">
+      <Filter>core\meta\reflection</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\core\meta\serializer\serializer.cpp">
+      <Filter>core\meta\serializer</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\engine.cpp" />
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\animation\animation_loader.cpp">
+      <Filter>function\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\animation\animation_system.cpp">
+      <Filter>function\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\animation\node.cpp">
+      <Filter>function\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\animation\skeleton.cpp">
+      <Filter>function\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\animation\utilities.cpp">
+      <Filter>function\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\character\character.cpp">
+      <Filter>function\character</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\controller\character_controller.cpp">
+      <Filter>function\controller</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\framework\component\animation\animation_component.cpp">
+      <Filter>function\framework\component\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\framework\component\camera\camera_component.cpp">
+      <Filter>function\framework\component\camera</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\framework\component\mesh\mesh_component.cpp">
+      <Filter>function\framework\component\mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\framework\component\motor\motor_component.cpp">
+      <Filter>function\framework\component\motor</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\framework\component\rigidbody\rigidbody_component.cpp">
+      <Filter>function\framework\component\rigidbody</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\framework\component\transform\transform_component.cpp">
+      <Filter>function\framework\component\transform</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\framework\level\level.cpp">
+      <Filter>function\framework\level</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\framework\object\object.cpp">
+      <Filter>function\framework\object</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\framework\object\object_id_allocator.cpp">
+      <Filter>function\framework\object</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\framework\world\world_manager.cpp">
+      <Filter>function\framework\world</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\global\global_context.cpp">
+      <Filter>function\global</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\input\input_system.cpp">
+      <Filter>function\input</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\physics\collision_detection.cpp">
+      <Filter>function\physics</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\physics\physics_actor.cpp">
+      <Filter>function\physics</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\physics\physics_system.cpp">
+      <Filter>function\physics</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\physics\ray.cpp">
+      <Filter>function\physics</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\render\passes\color_grading_pass.cpp">
+      <Filter>function\render\passes</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\render\passes\combine_ui_pass.cpp">
+      <Filter>function\render\passes</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\render\passes\directional_light_pass.cpp">
+      <Filter>function\render\passes</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\render\passes\fxaa_pass.cpp">
+      <Filter>function\render\passes</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\render\passes\main_camera_pass.cpp">
+      <Filter>function\render\passes</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\render\passes\pick_pass.cpp">
+      <Filter>function\render\passes</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\render\passes\point_light_pass.cpp">
+      <Filter>function\render\passes</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\render\passes\tone_mapping_pass.cpp">
+      <Filter>function\render\passes</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\render\passes\ui_pass.cpp">
+      <Filter>function\render\passes</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\render\render_camera.cpp">
+      <Filter>function\render</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\render\render_helper.cpp">
+      <Filter>function\render</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\render\render_pass.cpp">
+      <Filter>function\render</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\render\render_pass_base.cpp">
+      <Filter>function\render</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\render\render_pipeline.cpp">
+      <Filter>function\render</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\render\render_pipeline_base.cpp">
+      <Filter>function\render</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\render\render_resource.cpp">
+      <Filter>function\render</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\render\render_resource_base.cpp">
+      <Filter>function\render</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\render\render_scene.cpp">
+      <Filter>function\render</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\render\render_swap_context.cpp">
+      <Filter>function\render</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\render\render_system.cpp">
+      <Filter>function\render</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\render\rhi.cpp">
+      <Filter>function\render</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\render\rhi\vulkan\vulkan_rhi.cpp">
+      <Filter>function\render\rhi\vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\render\rhi\vulkan\vulkan_util.cpp">
+      <Filter>function\render\rhi\vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\render\rhi\vulkan\vulkan_vma.cpp">
+      <Filter>function\render\rhi\vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\render\window_system.cpp">
+      <Filter>function\render</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\function\ui\window_ui.cpp">
+      <Filter>function\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\platform\file_service\file_service.cpp">
+      <Filter>platform\file_service</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\platform\path\path.cpp">
+      <Filter>platform\path</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\resource\asset_manager\asset_manager.cpp">
+      <Filter>resource\asset_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\resource\config_manager\config_manager.cpp">
+      <Filter>resource\config_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\resource\res_type\components\camera.cpp">
+      <Filter>resource\res_type\components</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\resource\res_type\components\motor.cpp">
+      <Filter>resource\res_type\components</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\runtime\resource\res_type\components\rigid_body.cpp">
+      <Filter>resource\res_type\components</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\core\base\macro.h">
+      <Filter>core\base</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\core\color\color.h">
+      <Filter>core\color</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\core\log\log_system.h">
+      <Filter>core\log</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\core\math\axis_aligned.h">
+      <Filter>core\math</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\core\math\math.h">
+      <Filter>core\math</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\core\math\math_headers.h">
+      <Filter>core\math</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\core\math\math_marcos.h">
+      <Filter>core\math</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\core\math\matrix3.h">
+      <Filter>core\math</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\core\math\matrix4.h">
+      <Filter>core\math</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\core\math\quaternion.h">
+      <Filter>core\math</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\core\math\random.h">
+      <Filter>core\math</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\core\math\transform.h">
+      <Filter>core\math</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\core\math\vector2.h">
+      <Filter>core\math</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\core\math\vector3.h">
+      <Filter>core\math</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\core\math\vector4.h">
+      <Filter>core\math</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\core\meta\json.h">
+      <Filter>core\meta</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\core\meta\meta_example.h">
+      <Filter>core\meta</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\core\meta\reflection\reflection.h">
+      <Filter>core\meta\reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\core\meta\reflection\reflection_register.h">
+      <Filter>core\meta\reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\core\meta\serializer\serializer.h">
+      <Filter>core\meta\serializer</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\engine.h" />
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\animation\animation_loader.h">
+      <Filter>function\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\animation\animation_system.h">
+      <Filter>function\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\animation\node.h">
+      <Filter>function\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\animation\skeleton.h">
+      <Filter>function\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\animation\utilities.h">
+      <Filter>function\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\character\character.h">
+      <Filter>function\character</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\controller\character_controller.h">
+      <Filter>function\controller</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\framework\component\animation\animation_component.h">
+      <Filter>function\framework\component\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\framework\component\camera\camera_component.h">
+      <Filter>function\framework\component\camera</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\framework\component\component.h">
+      <Filter>function\framework\component</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\framework\component\mesh\mesh_component.h">
+      <Filter>function\framework\component\mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\framework\component\mesh\raw_mesh.h">
+      <Filter>function\framework\component\mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\framework\component\motor\motor_component.h">
+      <Filter>function\framework\component\motor</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\framework\component\rigidbody\rigidbody_component.h">
+      <Filter>function\framework\component\rigidbody</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\framework\component\transform\transform_component.h">
+      <Filter>function\framework\component\transform</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\framework\level\level.h">
+      <Filter>function\framework\level</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\framework\object\object.h">
+      <Filter>function\framework\object</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\framework\object\object_id_allocator.h">
+      <Filter>function\framework\object</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\framework\world\world_manager.h">
+      <Filter>function\framework\world</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\global\global_context.h">
+      <Filter>function\global</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\input\input_system.h">
+      <Filter>function\input</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\physics\collision_detection.h">
+      <Filter>function\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\physics\physics_aabb_shape.h">
+      <Filter>function\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\physics\physics_actor.h">
+      <Filter>function\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\physics\physics_obb_shape.h">
+      <Filter>function\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\physics\physics_shape_base.h">
+      <Filter>function\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\physics\physics_sphere_shape.h">
+      <Filter>function\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\physics\physics_system.h">
+      <Filter>function\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\physics\ray.h">
+      <Filter>function\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\render\glm_wrapper.h">
+      <Filter>function\render</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\render\light.h">
+      <Filter>function\render</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\render\passes\color_grading_pass.h">
+      <Filter>function\render\passes</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\render\passes\combine_ui_pass.h">
+      <Filter>function\render\passes</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\render\passes\directional_light_pass.h">
+      <Filter>function\render\passes</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\render\passes\fxaa_pass.h">
+      <Filter>function\render\passes</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\render\passes\main_camera_pass.h">
+      <Filter>function\render\passes</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\render\passes\pick_pass.h">
+      <Filter>function\render\passes</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\render\passes\point_light_pass.h">
+      <Filter>function\render\passes</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\render\passes\tone_mapping_pass.h">
+      <Filter>function\render\passes</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\render\passes\ui_pass.h">
+      <Filter>function\render\passes</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\render\render_camera.h">
+      <Filter>function\render</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\render\render_common.h">
+      <Filter>function\render</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\render\render_entity.h">
+      <Filter>function\render</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\render\render_guid_allocator.h">
+      <Filter>function\render</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\render\render_helper.h">
+      <Filter>function\render</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\render\render_mesh.h">
+      <Filter>function\render</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\render\render_object.h">
+      <Filter>function\render</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\render\render_pass.h">
+      <Filter>function\render</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\render\render_pass_base.h">
+      <Filter>function\render</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\render\render_pipeline.h">
+      <Filter>function\render</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\render\render_pipeline_base.h">
+      <Filter>function\render</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\render\render_resource.h">
+      <Filter>function\render</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\render\render_resource_base.h">
+      <Filter>function\render</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\render\render_scene.h">
+      <Filter>function\render</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\render\render_swap_context.h">
+      <Filter>function\render</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\render\render_system.h">
+      <Filter>function\render</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\render\render_type.h">
+      <Filter>function\render</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\render\rhi.h">
+      <Filter>function\render</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\render\rhi\vulkan\vulkan_rhi.h">
+      <Filter>function\render\rhi\vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\render\rhi\vulkan\vulkan_util.h">
+      <Filter>function\render\rhi\vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\render\window_system.h">
+      <Filter>function\render</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\function\ui\window_ui.h">
+      <Filter>function\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\platform\file_service\file_service.h">
+      <Filter>platform\file_service</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\platform\path\path.h">
+      <Filter>platform\path</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\resource\asset_manager\asset_manager.h">
+      <Filter>resource\asset_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\resource\config_manager\config_manager.h">
+      <Filter>resource\config_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\resource\res_type\common\level.h">
+      <Filter>resource\res_type\common</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\resource\res_type\common\object.h">
+      <Filter>resource\res_type\common</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\resource\res_type\common\world.h">
+      <Filter>resource\res_type\common</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\resource\res_type\components\animation.h">
+      <Filter>resource\res_type\components</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\resource\res_type\components\camera.h">
+      <Filter>resource\res_type\components</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\resource\res_type\components\mesh.h">
+      <Filter>resource\res_type\components</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\resource\res_type\components\motor.h">
+      <Filter>resource\res_type\components</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\resource\res_type\components\rigid_body.h">
+      <Filter>resource\res_type\components</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\resource\res_type\data\animation_clip.h">
+      <Filter>resource\res_type\data</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\resource\res_type\data\animation_skeleton_node_map.h">
+      <Filter>resource\res_type\data</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\resource\res_type\data\basic_shape.h">
+      <Filter>resource\res_type\data</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\resource\res_type\data\blend_state.h">
+      <Filter>resource\res_type\data</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\resource\res_type\data\camera_config.h">
+      <Filter>resource\res_type\data</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\resource\res_type\data\material.h">
+      <Filter>resource\res_type\data</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\resource\res_type\data\mesh_data.h">
+      <Filter>resource\res_type\data</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\resource\res_type\data\skeleton_data.h">
+      <Filter>resource\res_type\data</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\resource\res_type\data\skeleton_mask.h">
+      <Filter>resource\res_type\data</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\runtime\resource\res_type\global\global_rendering.h">
+      <Filter>resource\res_type\global</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\piccolo\Pilot\engine\source\runtime\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="core">
+      <UniqueIdentifier>{53A22052-CA20-3FDD-893F-42F23A9D235E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\base">
+      <UniqueIdentifier>{074658FA-F445-3EFC-B3BC-8BE1AFA857C3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\color">
+      <UniqueIdentifier>{B7CE19E5-6FC3-3DC6-9389-88C23320F0EE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\log">
+      <UniqueIdentifier>{D77668FE-7309-3A9A-86DD-5142B40CAC76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\math">
+      <UniqueIdentifier>{3107A5FE-0DBD-3776-93C8-C179B3480C11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\meta">
+      <UniqueIdentifier>{27088814-9268-3662-B96F-ACE573F3B351}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\meta\reflection">
+      <UniqueIdentifier>{0CB51037-43F5-3865-A794-A61FAF553EA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\meta\serializer">
+      <UniqueIdentifier>{FBADDD1F-75DB-3AC0-9DA8-8CE9ADE80943}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="function">
+      <UniqueIdentifier>{8D018694-8756-3D64-89CB-CE8DAA84B22F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="function\animation">
+      <UniqueIdentifier>{A73A3595-6BAE-34A6-A6BF-ACF235B85D49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="function\character">
+      <UniqueIdentifier>{28C02AEF-BD0D-349C-82EF-FBC9A5FE6BD7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="function\controller">
+      <UniqueIdentifier>{88EE486C-66C9-3663-9278-B967960CB946}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="function\framework">
+      <UniqueIdentifier>{93A1CB44-8221-34B7-B59C-FD820508774B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="function\framework\component">
+      <UniqueIdentifier>{9999B612-55E1-3E1E-8173-BE481A7DA17D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="function\framework\component\animation">
+      <UniqueIdentifier>{0967F420-DD2F-3F8D-893B-6E51FFB9D5F8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="function\framework\component\camera">
+      <UniqueIdentifier>{CF9FDF7B-A940-31EE-BB7C-D713231208AC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="function\framework\component\mesh">
+      <UniqueIdentifier>{D204A327-96FA-3AD0-AB7A-3F31D8C4CD82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="function\framework\component\motor">
+      <UniqueIdentifier>{80733493-2434-3B8B-BFD4-9516126BC0E2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="function\framework\component\rigidbody">
+      <UniqueIdentifier>{7BC25696-C5F0-3443-B1B5-13A01D9FFFC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="function\framework\component\transform">
+      <UniqueIdentifier>{542A4661-A2B5-312F-98A6-FEA4DC732512}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="function\framework\level">
+      <UniqueIdentifier>{0AF2FB5A-AB43-329C-826B-F50BC7F53E74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="function\framework\object">
+      <UniqueIdentifier>{79712904-6EA8-35F9-9D80-045A863346D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="function\framework\world">
+      <UniqueIdentifier>{70EA45EC-FBB6-369F-9F67-44DBD7A2D026}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="function\global">
+      <UniqueIdentifier>{2D0A7DC7-1788-32DC-8E94-81F0A2BDAAB2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="function\input">
+      <UniqueIdentifier>{0BAA90F2-75C9-3060-AAEE-96735A29AD45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="function\physics">
+      <UniqueIdentifier>{703956F6-A858-33A1-8DE4-D2F42D6D56B5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="function\render">
+      <UniqueIdentifier>{8C6B3044-86ED-33C7-B011-7E7E90CC8F02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="function\render\passes">
+      <UniqueIdentifier>{E41ED0B1-3064-3190-8562-BE50BFC2C59F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="function\render\rhi">
+      <UniqueIdentifier>{956B12AD-06FA-3B68-8C2F-7F9A8C2A6F57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="function\render\rhi\vulkan">
+      <UniqueIdentifier>{DECEBAE6-8D69-3982-96F6-1D3312C3089B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="function\ui">
+      <UniqueIdentifier>{CF24D6AF-C06A-3328-A69B-C7F7A34B4C18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="platform">
+      <UniqueIdentifier>{5B5BADAE-1572-3689-840F-7275543E3509}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="platform\file_service">
+      <UniqueIdentifier>{FD89246B-E205-3043-AAFE-9AE5D31E86CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="platform\path">
+      <UniqueIdentifier>{C2C81650-5F01-3F78-9852-EF0AFEB090E0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{DADCD2F8-3EBF-3844-84B2-775BF15F9989}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\asset_manager">
+      <UniqueIdentifier>{4EBF4F5A-2F66-3251-AB2B-F72E6B88BDED}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\config_manager">
+      <UniqueIdentifier>{B952CD83-3943-3C1D-AA83-3D60771131B2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\res_type">
+      <UniqueIdentifier>{EDC65C1F-5EA7-3D0E-881C-B9ED7F27D7F4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\res_type\common">
+      <UniqueIdentifier>{A13B7997-4ED7-37CE-9F35-02DA5B392B56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\res_type\components">
+      <UniqueIdentifier>{1DFBEC9A-4D28-320D-A190-DAA4A671FB19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\res_type\data">
+      <UniqueIdentifier>{6827FE04-C59A-3C1D-AD5D-AB551CA1358D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\res_type\global">
+      <UniqueIdentifier>{823761ED-4498-3422-9E21-4C68F7104951}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

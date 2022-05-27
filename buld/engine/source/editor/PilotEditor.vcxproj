@@ -1,0 +1,474 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1EF94640-B6E9-33CE-B4F1-F17015FDD853}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>PilotEditor</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\piccolo\Pilot\buld\engine\source\editor\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">PilotEditor.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">PilotEditor</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\piccolo\Pilot\buld\engine\source\editor\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">PilotEditor.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">PilotEditor</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\piccolo\Pilot\buld\engine\source\editor\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">PilotEditor.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">PilotEditor</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\piccolo\Pilot\buld\engine\source\editor\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">PilotEditor.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">PilotEditor</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\piccolo\Pilot\engine\3rdparty\stb;D:\piccolo\Pilot\engine\3rdparty\VulkanSDK\include;D:\piccolo\Pilot\engine\shader\generated\cpp;D:\piccolo\Pilot\engine\source;D:\piccolo\Pilot\engine\3rdparty\json11;D:\piccolo\Pilot\engine\3rdparty\vulkanmemoryallocator\include;D:\piccolo\Pilot\engine\source\runtime;D:\piccolo\Pilot\engine\source\runtime\function\render\include;D:\piccolo\Pilot\engine\3rdparty\spdlog\include;D:\piccolo\Pilot\engine\3rdparty\tinyobjloader;D:\piccolo\Pilot\engine\3rdparty\glm\glm\..;D:\piccolo\Pilot\engine\3rdparty\glfw\include;D:\piccolo\Pilot\engine\3rdparty\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;PILOT_VK_LAYER_PATH=D:/piccolo/Pilot/engine/3rdparty/VulkanSDK/bin/Win32;PILOT_ROOT_DIR=D:/piccolo/Pilot/bin/;SPDLOG_COMPILED_LIB;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;PILOT_VK_LAYER_PATH=D:/piccolo/Pilot/engine/3rdparty/VulkanSDK/bin/Win32;PILOT_ROOT_DIR=D:/piccolo/Pilot/bin/;SPDLOG_COMPILED_LIB;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\piccolo\Pilot\engine\3rdparty\stb;D:\piccolo\Pilot\engine\3rdparty\VulkanSDK\include;D:\piccolo\Pilot\engine\shader\generated\cpp;D:\piccolo\Pilot\engine\source;D:\piccolo\Pilot\engine\3rdparty\json11;D:\piccolo\Pilot\engine\3rdparty\vulkanmemoryallocator\include;D:\piccolo\Pilot\engine\source\runtime;D:\piccolo\Pilot\engine\source\runtime\function\render\include;D:\piccolo\Pilot\engine\3rdparty\spdlog\include;D:\piccolo\Pilot\engine\3rdparty\tinyobjloader;D:\piccolo\Pilot\engine\3rdparty\glm\glm\..;D:\piccolo\Pilot\engine\3rdparty\glfw\include;D:\piccolo\Pilot\engine\3rdparty\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\piccolo\Pilot\engine\3rdparty\stb;D:\piccolo\Pilot\engine\3rdparty\VulkanSDK\include;D:\piccolo\Pilot\engine\shader\generated\cpp;D:\piccolo\Pilot\engine\source;D:\piccolo\Pilot\engine\3rdparty\json11;D:\piccolo\Pilot\engine\3rdparty\vulkanmemoryallocator\include;D:\piccolo\Pilot\engine\source\runtime;D:\piccolo\Pilot\engine\source\runtime\function\render\include;D:\piccolo\Pilot\engine\3rdparty\spdlog\include;D:\piccolo\Pilot\engine\3rdparty\tinyobjloader;D:\piccolo\Pilot\engine\3rdparty\glm\glm\..;D:\piccolo\Pilot\engine\3rdparty\glfw\include;D:\piccolo\Pilot\engine\3rdparty\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+D:\Cmake\bin\cmake.exe -E make_directory D:/piccolo/Pilot/bin/
+if %errorlevel% neq 0 goto :cmEnd
+D:\Cmake\bin\cmake.exe -E copy D:/piccolo/Pilot/engine/PilotEditor.ini D:/piccolo/Pilot/bin/
+if %errorlevel% neq 0 goto :cmEnd
+D:\Cmake\bin\cmake.exe -E copy_directory D:/piccolo/Pilot/engine/source/editor/resource D:/piccolo/Pilot/bin//resource
+if %errorlevel% neq 0 goto :cmEnd
+D:\Cmake\bin\cmake.exe -E copy_directory D:/piccolo/Pilot/buld/engine/source/editor/Debug/ D:/piccolo/Pilot/bin/
+if %errorlevel% neq 0 goto :cmEnd
+D:\Cmake\bin\cmake.exe -E remove_directory D:/piccolo/Pilot/bin///asset
+if %errorlevel% neq 0 goto :cmEnd
+D:\Cmake\bin\cmake.exe -E copy_directory D:/piccolo/Pilot/engine//asset D:/piccolo/Pilot/bin///asset
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\runtime\Debug\PilotRuntime.lib;..\..\3rdparty\spdlog\Debug\spdlogd.lib;..\..\3rdparty\tinyobjloader\Debug\tinyobjloader.lib;..\..\3rdparty\Debug\imgui.lib;..\..\3rdparty\glfw\src\Debug\glfw3.lib;..\..\..\..\engine\3rdparty\VulkanSDK\lib\Win32\vulkan-1.lib;..\runtime\Debug\json11.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/piccolo/Pilot/buld/engine/source/editor/Debug/PilotEditor.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/piccolo/Pilot/buld/engine/source/editor/Debug/PilotEditor.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\piccolo\Pilot\engine\3rdparty\stb;D:\piccolo\Pilot\engine\3rdparty\VulkanSDK\include;D:\piccolo\Pilot\engine\shader\generated\cpp;D:\piccolo\Pilot\engine\source;D:\piccolo\Pilot\engine\3rdparty\json11;D:\piccolo\Pilot\engine\3rdparty\vulkanmemoryallocator\include;D:\piccolo\Pilot\engine\source\runtime;D:\piccolo\Pilot\engine\source\runtime\function\render\include;D:\piccolo\Pilot\engine\3rdparty\spdlog\include;D:\piccolo\Pilot\engine\3rdparty\tinyobjloader;D:\piccolo\Pilot\engine\3rdparty\glm\glm\..;D:\piccolo\Pilot\engine\3rdparty\glfw\include;D:\piccolo\Pilot\engine\3rdparty\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ConformanceMode>true</ConformanceMode>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PILOT_VK_LAYER_PATH=D:/piccolo/Pilot/engine/3rdparty/VulkanSDK/bin/Win32;PILOT_ROOT_DIR=D:/piccolo/Pilot/bin/;SPDLOG_COMPILED_LIB;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PILOT_VK_LAYER_PATH=D:/piccolo/Pilot/engine/3rdparty/VulkanSDK/bin/Win32;PILOT_ROOT_DIR=D:/piccolo/Pilot/bin/;SPDLOG_COMPILED_LIB;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\piccolo\Pilot\engine\3rdparty\stb;D:\piccolo\Pilot\engine\3rdparty\VulkanSDK\include;D:\piccolo\Pilot\engine\shader\generated\cpp;D:\piccolo\Pilot\engine\source;D:\piccolo\Pilot\engine\3rdparty\json11;D:\piccolo\Pilot\engine\3rdparty\vulkanmemoryallocator\include;D:\piccolo\Pilot\engine\source\runtime;D:\piccolo\Pilot\engine\source\runtime\function\render\include;D:\piccolo\Pilot\engine\3rdparty\spdlog\include;D:\piccolo\Pilot\engine\3rdparty\tinyobjloader;D:\piccolo\Pilot\engine\3rdparty\glm\glm\..;D:\piccolo\Pilot\engine\3rdparty\glfw\include;D:\piccolo\Pilot\engine\3rdparty\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\piccolo\Pilot\engine\3rdparty\stb;D:\piccolo\Pilot\engine\3rdparty\VulkanSDK\include;D:\piccolo\Pilot\engine\shader\generated\cpp;D:\piccolo\Pilot\engine\source;D:\piccolo\Pilot\engine\3rdparty\json11;D:\piccolo\Pilot\engine\3rdparty\vulkanmemoryallocator\include;D:\piccolo\Pilot\engine\source\runtime;D:\piccolo\Pilot\engine\source\runtime\function\render\include;D:\piccolo\Pilot\engine\3rdparty\spdlog\include;D:\piccolo\Pilot\engine\3rdparty\tinyobjloader;D:\piccolo\Pilot\engine\3rdparty\glm\glm\..;D:\piccolo\Pilot\engine\3rdparty\glfw\include;D:\piccolo\Pilot\engine\3rdparty\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+D:\Cmake\bin\cmake.exe -E make_directory D:/piccolo/Pilot/bin/
+if %errorlevel% neq 0 goto :cmEnd
+D:\Cmake\bin\cmake.exe -E copy D:/piccolo/Pilot/engine/PilotEditor.ini D:/piccolo/Pilot/bin/
+if %errorlevel% neq 0 goto :cmEnd
+D:\Cmake\bin\cmake.exe -E copy_directory D:/piccolo/Pilot/engine/source/editor/resource D:/piccolo/Pilot/bin//resource
+if %errorlevel% neq 0 goto :cmEnd
+D:\Cmake\bin\cmake.exe -E copy_directory D:/piccolo/Pilot/buld/engine/source/editor/Release/ D:/piccolo/Pilot/bin/
+if %errorlevel% neq 0 goto :cmEnd
+D:\Cmake\bin\cmake.exe -E remove_directory D:/piccolo/Pilot/bin///asset
+if %errorlevel% neq 0 goto :cmEnd
+D:\Cmake\bin\cmake.exe -E copy_directory D:/piccolo/Pilot/engine//asset D:/piccolo/Pilot/bin///asset
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\runtime\Release\PilotRuntime.lib;..\..\3rdparty\spdlog\Release\spdlog.lib;..\..\3rdparty\tinyobjloader\Release\tinyobjloader.lib;..\..\3rdparty\Release\imgui.lib;..\..\3rdparty\glfw\src\Release\glfw3.lib;..\..\..\..\engine\3rdparty\VulkanSDK\lib\Win32\vulkan-1.lib;..\runtime\Release\json11.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/piccolo/Pilot/buld/engine/source/editor/Release/PilotEditor.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/piccolo/Pilot/buld/engine/source/editor/Release/PilotEditor.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\piccolo\Pilot\engine\3rdparty\stb;D:\piccolo\Pilot\engine\3rdparty\VulkanSDK\include;D:\piccolo\Pilot\engine\shader\generated\cpp;D:\piccolo\Pilot\engine\source;D:\piccolo\Pilot\engine\3rdparty\json11;D:\piccolo\Pilot\engine\3rdparty\vulkanmemoryallocator\include;D:\piccolo\Pilot\engine\source\runtime;D:\piccolo\Pilot\engine\source\runtime\function\render\include;D:\piccolo\Pilot\engine\3rdparty\spdlog\include;D:\piccolo\Pilot\engine\3rdparty\tinyobjloader;D:\piccolo\Pilot\engine\3rdparty\glm\glm\..;D:\piccolo\Pilot\engine\3rdparty\glfw\include;D:\piccolo\Pilot\engine\3rdparty\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ConformanceMode>true</ConformanceMode>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PILOT_VK_LAYER_PATH=D:/piccolo/Pilot/engine/3rdparty/VulkanSDK/bin/Win32;PILOT_ROOT_DIR=D:/piccolo/Pilot/bin/;SPDLOG_COMPILED_LIB;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PILOT_VK_LAYER_PATH=D:/piccolo/Pilot/engine/3rdparty/VulkanSDK/bin/Win32;PILOT_ROOT_DIR=D:/piccolo/Pilot/bin/;SPDLOG_COMPILED_LIB;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\piccolo\Pilot\engine\3rdparty\stb;D:\piccolo\Pilot\engine\3rdparty\VulkanSDK\include;D:\piccolo\Pilot\engine\shader\generated\cpp;D:\piccolo\Pilot\engine\source;D:\piccolo\Pilot\engine\3rdparty\json11;D:\piccolo\Pilot\engine\3rdparty\vulkanmemoryallocator\include;D:\piccolo\Pilot\engine\source\runtime;D:\piccolo\Pilot\engine\source\runtime\function\render\include;D:\piccolo\Pilot\engine\3rdparty\spdlog\include;D:\piccolo\Pilot\engine\3rdparty\tinyobjloader;D:\piccolo\Pilot\engine\3rdparty\glm\glm\..;D:\piccolo\Pilot\engine\3rdparty\glfw\include;D:\piccolo\Pilot\engine\3rdparty\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\piccolo\Pilot\engine\3rdparty\stb;D:\piccolo\Pilot\engine\3rdparty\VulkanSDK\include;D:\piccolo\Pilot\engine\shader\generated\cpp;D:\piccolo\Pilot\engine\source;D:\piccolo\Pilot\engine\3rdparty\json11;D:\piccolo\Pilot\engine\3rdparty\vulkanmemoryallocator\include;D:\piccolo\Pilot\engine\source\runtime;D:\piccolo\Pilot\engine\source\runtime\function\render\include;D:\piccolo\Pilot\engine\3rdparty\spdlog\include;D:\piccolo\Pilot\engine\3rdparty\tinyobjloader;D:\piccolo\Pilot\engine\3rdparty\glm\glm\..;D:\piccolo\Pilot\engine\3rdparty\glfw\include;D:\piccolo\Pilot\engine\3rdparty\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+D:\Cmake\bin\cmake.exe -E make_directory D:/piccolo/Pilot/bin/
+if %errorlevel% neq 0 goto :cmEnd
+D:\Cmake\bin\cmake.exe -E copy D:/piccolo/Pilot/engine/PilotEditor.ini D:/piccolo/Pilot/bin/
+if %errorlevel% neq 0 goto :cmEnd
+D:\Cmake\bin\cmake.exe -E copy_directory D:/piccolo/Pilot/engine/source/editor/resource D:/piccolo/Pilot/bin//resource
+if %errorlevel% neq 0 goto :cmEnd
+D:\Cmake\bin\cmake.exe -E copy_directory D:/piccolo/Pilot/buld/engine/source/editor/MinSizeRel/ D:/piccolo/Pilot/bin/
+if %errorlevel% neq 0 goto :cmEnd
+D:\Cmake\bin\cmake.exe -E remove_directory D:/piccolo/Pilot/bin///asset
+if %errorlevel% neq 0 goto :cmEnd
+D:\Cmake\bin\cmake.exe -E copy_directory D:/piccolo/Pilot/engine//asset D:/piccolo/Pilot/bin///asset
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\runtime\MinSizeRel\PilotRuntime.lib;..\..\3rdparty\spdlog\MinSizeRel\spdlog.lib;..\..\3rdparty\tinyobjloader\MinSizeRel\tinyobjloader.lib;..\..\3rdparty\MinSizeRel\imgui.lib;..\..\3rdparty\glfw\src\MinSizeRel\glfw3.lib;..\..\..\..\engine\3rdparty\VulkanSDK\lib\Win32\vulkan-1.lib;..\runtime\MinSizeRel\json11.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/piccolo/Pilot/buld/engine/source/editor/MinSizeRel/PilotEditor.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/piccolo/Pilot/buld/engine/source/editor/MinSizeRel/PilotEditor.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\piccolo\Pilot\engine\3rdparty\stb;D:\piccolo\Pilot\engine\3rdparty\VulkanSDK\include;D:\piccolo\Pilot\engine\shader\generated\cpp;D:\piccolo\Pilot\engine\source;D:\piccolo\Pilot\engine\3rdparty\json11;D:\piccolo\Pilot\engine\3rdparty\vulkanmemoryallocator\include;D:\piccolo\Pilot\engine\source\runtime;D:\piccolo\Pilot\engine\source\runtime\function\render\include;D:\piccolo\Pilot\engine\3rdparty\spdlog\include;D:\piccolo\Pilot\engine\3rdparty\tinyobjloader;D:\piccolo\Pilot\engine\3rdparty\glm\glm\..;D:\piccolo\Pilot\engine\3rdparty\glfw\include;D:\piccolo\Pilot\engine\3rdparty\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PILOT_VK_LAYER_PATH=D:/piccolo/Pilot/engine/3rdparty/VulkanSDK/bin/Win32;PILOT_ROOT_DIR=D:/piccolo/Pilot/bin/;SPDLOG_COMPILED_LIB;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PILOT_VK_LAYER_PATH=D:/piccolo/Pilot/engine/3rdparty/VulkanSDK/bin/Win32;PILOT_ROOT_DIR=D:/piccolo/Pilot/bin/;SPDLOG_COMPILED_LIB;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\piccolo\Pilot\engine\3rdparty\stb;D:\piccolo\Pilot\engine\3rdparty\VulkanSDK\include;D:\piccolo\Pilot\engine\shader\generated\cpp;D:\piccolo\Pilot\engine\source;D:\piccolo\Pilot\engine\3rdparty\json11;D:\piccolo\Pilot\engine\3rdparty\vulkanmemoryallocator\include;D:\piccolo\Pilot\engine\source\runtime;D:\piccolo\Pilot\engine\source\runtime\function\render\include;D:\piccolo\Pilot\engine\3rdparty\spdlog\include;D:\piccolo\Pilot\engine\3rdparty\tinyobjloader;D:\piccolo\Pilot\engine\3rdparty\glm\glm\..;D:\piccolo\Pilot\engine\3rdparty\glfw\include;D:\piccolo\Pilot\engine\3rdparty\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\piccolo\Pilot\engine\3rdparty\stb;D:\piccolo\Pilot\engine\3rdparty\VulkanSDK\include;D:\piccolo\Pilot\engine\shader\generated\cpp;D:\piccolo\Pilot\engine\source;D:\piccolo\Pilot\engine\3rdparty\json11;D:\piccolo\Pilot\engine\3rdparty\vulkanmemoryallocator\include;D:\piccolo\Pilot\engine\source\runtime;D:\piccolo\Pilot\engine\source\runtime\function\render\include;D:\piccolo\Pilot\engine\3rdparty\spdlog\include;D:\piccolo\Pilot\engine\3rdparty\tinyobjloader;D:\piccolo\Pilot\engine\3rdparty\glm\glm\..;D:\piccolo\Pilot\engine\3rdparty\glfw\include;D:\piccolo\Pilot\engine\3rdparty\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+D:\Cmake\bin\cmake.exe -E make_directory D:/piccolo/Pilot/bin/
+if %errorlevel% neq 0 goto :cmEnd
+D:\Cmake\bin\cmake.exe -E copy D:/piccolo/Pilot/engine/PilotEditor.ini D:/piccolo/Pilot/bin/
+if %errorlevel% neq 0 goto :cmEnd
+D:\Cmake\bin\cmake.exe -E copy_directory D:/piccolo/Pilot/engine/source/editor/resource D:/piccolo/Pilot/bin//resource
+if %errorlevel% neq 0 goto :cmEnd
+D:\Cmake\bin\cmake.exe -E copy_directory D:/piccolo/Pilot/buld/engine/source/editor/RelWithDebInfo/ D:/piccolo/Pilot/bin/
+if %errorlevel% neq 0 goto :cmEnd
+D:\Cmake\bin\cmake.exe -E remove_directory D:/piccolo/Pilot/bin///asset
+if %errorlevel% neq 0 goto :cmEnd
+D:\Cmake\bin\cmake.exe -E copy_directory D:/piccolo/Pilot/engine//asset D:/piccolo/Pilot/bin///asset
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\runtime\RelWithDebInfo\PilotRuntime.lib;..\..\3rdparty\spdlog\RelWithDebInfo\spdlog.lib;..\..\3rdparty\tinyobjloader\RelWithDebInfo\tinyobjloader.lib;..\..\3rdparty\RelWithDebInfo\imgui.lib;..\..\3rdparty\glfw\src\RelWithDebInfo\glfw3.lib;..\..\..\..\engine\3rdparty\VulkanSDK\lib\Win32\vulkan-1.lib;..\runtime\RelWithDebInfo\json11.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/piccolo/Pilot/buld/engine/source/editor/RelWithDebInfo/PilotEditor.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/piccolo/Pilot/buld/engine/source/editor/RelWithDebInfo/PilotEditor.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\piccolo\Pilot\engine\source\editor\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/piccolo/Pilot/engine/source/editor/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Cmake\bin\cmake.exe -SD:/piccolo/Pilot -BD:/piccolo/Pilot/buld --check-stamp-file D:/piccolo/Pilot/buld/engine/source/editor/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\piccolo\Pilot\buld\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\piccolo\Pilot\buld\engine\source\editor\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/piccolo/Pilot/engine/source/editor/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Cmake\bin\cmake.exe -SD:/piccolo/Pilot -BD:/piccolo/Pilot/buld --check-stamp-file D:/piccolo/Pilot/buld/engine/source/editor/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\piccolo\Pilot\buld\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\piccolo\Pilot\buld\engine\source\editor\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/piccolo/Pilot/engine/source/editor/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Cmake\bin\cmake.exe -SD:/piccolo/Pilot -BD:/piccolo/Pilot/buld --check-stamp-file D:/piccolo/Pilot/buld/engine/source/editor/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\piccolo\Pilot\buld\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\piccolo\Pilot\buld\engine\source\editor\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/piccolo/Pilot/engine/source/editor/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Cmake\bin\cmake.exe -SD:/piccolo/Pilot -BD:/piccolo/Pilot/buld --check-stamp-file D:/piccolo/Pilot/buld/engine/source/editor/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\piccolo\Pilot\buld\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\piccolo\Pilot\buld\engine\source\editor\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\editor\include\axis.h" />
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\editor\include\editor.h" />
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\editor\include\editor_file_service.h" />
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\editor\include\editor_global_context.h" />
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\editor\include\editor_input_manager.h" />
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\editor\include\editor_scene_manager.h" />
+    <ClInclude Include="D:\piccolo\Pilot\engine\source\editor\include\editor_ui.h" />
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\editor\source\axis.cpp" />
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\editor\source\editor.cpp" />
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\editor\source\editor_file_service.cpp" />
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\editor\source\editor_global_context.cpp" />
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\editor\source\editor_input_manager.cpp" />
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\editor\source\editor_scene_manager.cpp" />
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\editor\source\editor_ui.cpp" />
+    <ClCompile Include="D:\piccolo\Pilot\engine\source\editor\source\main.cpp" />
+    <ResourceCompile Include="D:\piccolo\Pilot\engine\source\editor\resource\PilotEditor.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\piccolo\Pilot\buld\ZERO_CHECK.vcxproj">
+      <Project>{54E4DA11-2918-3C51-B093-3CB4F8882420}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\piccolo\Pilot\buld\engine\source\runtime\PilotRuntime.vcxproj">
+      <Project>{BCE8FC2A-A000-38ED-98C7-D1659FED6876}</Project>
+      <Name>PilotRuntime</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\piccolo\Pilot\buld\engine\3rdparty\glfw\src\glfw.vcxproj">
+      <Project>{0B7C0731-8B23-3F7E-BAB2-A64965CF914E}</Project>
+      <Name>glfw</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\piccolo\Pilot\buld\engine\3rdparty\imgui.vcxproj">
+      <Project>{76AD34AE-C3F9-321E-944B-2CE32B8A5E6E}</Project>
+      <Name>imgui</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\piccolo\Pilot\buld\engine\source\runtime\json11.vcxproj">
+      <Project>{2D8CB37C-3E9F-39C6-A68D-04C9A794A4C7}</Project>
+      <Name>json11</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\piccolo\Pilot\buld\engine\3rdparty\spdlog\spdlog.vcxproj">
+      <Project>{D6791A6F-E8EE-3CA3-A053-3AC8EA850F8E}</Project>
+      <Name>spdlog</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\piccolo\Pilot\buld\engine\3rdparty\stb.vcxproj">
+      <Project>{2754D0BB-EAD2-3F08-BEF0-F3173CD37F3A}</Project>
+      <Name>stb</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\piccolo\Pilot\buld\engine\3rdparty\tinyobjloader\tinyobjloader.vcxproj">
+      <Project>{3AD637B1-3FB9-3A77-98D3-7CB200440E07}</Project>
+      <Name>tinyobjloader</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

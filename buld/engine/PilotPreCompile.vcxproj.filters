@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\piccolo\Pilot\buld\CMakeFiles\433ff2cdd53d04186ff4ac8d54a9707f\PilotPreCompile.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\piccolo\Pilot\engine\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\piccolo\Pilot\buld\engine\CMakeFiles\PilotPreCompile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{7AC096CB-50F3-3C30-BECA-A20B67E86167}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

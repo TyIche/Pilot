@@ -13,11 +13,18 @@ layout(location = 0) out highp vec4 out_color;
 void main()
 {
     highp ivec2 lut_tex_size = textureSize(color_grading_lut_texture_sampler, 0);
-    highp float _COLORS      = float(lut_tex_size.y);
 
     highp vec4 color       = subpassLoad(in_color).rgba;
     
-    // texture(color_grading_lut_texture_sampler, uv)
-
+    highp float height = float(lut_tex_size.y) - 1.0,width = float(lut_tex_size.x);
+    highp float z0 = floor(color.z * height),z1 = ceil(color.z * height);
+    highp vec2 uv0 = vec2(color.x * height + z0 * (height + 1.0),color.y);
+    highp vec2 uv1 = vec2(color.x * height + z1 * (height + 1.0),color.y);
+    uv0.x /= width;uv1.x /= width;
+    color = texture(color_grading_lut_texture_sampler,uv0);
+    /*
+    color = mix(texture(color_grading_lut_texture_sampler,uv0),
+    texture(color_grading_lut_texture_sampler,uv1),fract(color.z * height));
+    */
     out_color = color;
 }
