@@ -15,7 +15,7 @@ void main()
     highp ivec2 lut_tex_size = textureSize(color_grading_lut_texture_sampler, 0);
     highp vec4 color       = subpassLoad(in_color).rgba;
 
-    if(gl_FragCoord.x < 600.0) {out_color = color;return;}
+    
     highp float height = float(lut_tex_size.y) - 1.0,width = float(lut_tex_size.x);
     highp float z0 = floor(color.z * height),z1 = ceil(color.z * height);
     highp vec2 uv0 = vec2(color.x * height + z0 * (height + 1.0),color.y);

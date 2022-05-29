@@ -26,7 +26,19 @@ namespace Pilot
         void setupPipelines();
         void setupDescriptorSet();
     };
+    class PEdgePass : public PRenderPassBase
+    {
+    public:
+        void initialize(VkRenderPass render_pass, VkImageView input_attachment);
+        void draw();
 
+        void updateAfterFramebufferRecreate(VkImageView input_attachment);
+
+    private:
+        void setupDescriptorSetLayout();
+        void setupPipelines();
+        void setupDescriptorSet();
+    };
     class PToneMappingPass : public PRenderPassBase
     {
     public:
