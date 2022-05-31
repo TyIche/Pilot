@@ -253,6 +253,26 @@ namespace Pilot
         tone_mapping_pass.preserveAttachmentCount = 0;
         tone_mapping_pass.pPreserveAttachments    = NULL;
 
+        VkAttachmentReference edge_pass_input_attachment_reference {};
+        edge_pass_input_attachment_reference.attachment =
+            &backup_odd_color_attachment_description - attachments;
+        edge_pass_input_attachment_reference.layout = VK_IMAGE_LAYOUT_SHADER_READ_ONLY_OPTIMAL;
+
+        VkAttachmentReference edge_pass_color_attachment_reference {};
+        edge_pass_color_attachment_reference.attachment =
+            &backup_even_color_attachment_description - attachments;
+        edge_pass_color_attachment_reference.layout = VK_IMAGE_LAYOUT_COLOR_ATTACHMENT_OPTIMAL;
+
+        VkSubpassDescription& edge_pass   = subpasses[_main_camera_subpass_tone_mapping];
+        edge_pass.pipelineBindPoint       = VK_PIPELINE_BIND_POINT_GRAPHICS;
+        edge_pass.inputAttachmentCount    = 1;
+        edge_pass.pInputAttachments       = &edge_pass_input_attachment_reference;
+        edge_pass.colorAttachmentCount    = 1;
+        edge_pass.pColorAttachments       = &edge_pass_color_attachment_reference;
+        edge_pass.pDepthStencilAttachment = NULL;
+        edge_pass.preserveAttachmentCount = 0;
+        edge_pass.pPreserveAttachments    = NULL;
+
         VkAttachmentReference color_grading_pass_input_attachment_reference {};
         color_grading_pass_input_attachment_reference.attachment =
             &backup_even_color_attachment_description - attachments;
@@ -375,6 +395,32 @@ namespace Pilot
             VK_ACCESS_SHADER_READ_BIT | VK_ACCESS_COLOR_ATTACHMENT_READ_BIT;
         color_grading_pass_depend_on_tone_mapping_pass.dependencyFlags = VK_DEPENDENCY_BY_REGION_BIT;
 
+
+        VkSubpassDependency& edge_pass_depend_on_lighting_pass = dependencies[3];
+        edge_pass_depend_on_lighting_pass.srcSubpass           = _main_camera_subpass_forward_lighting;
+        edge_pass_depend_on_lighting_pass.dstSubpass           = _main_camera_subpass_tone_mapping;
+        edge_pass_depend_on_lighting_pass.srcStageMask =
+            VK_PIPELINE_STAGE_FRAGMENT_SHADER_BIT | VK_PIPELINE_STAGE_COLOR_ATTACHMENT_OUTPUT_BIT;
+        edge_pass_depend_on_lighting_pass.dstStageMask =
+            VK_PIPELINE_STAGE_FRAGMENT_SHADER_BIT | VK_PIPELINE_STAGE_COLOR_ATTACHMENT_OUTPUT_BIT;
+        edge_pass_depend_on_lighting_pass.srcAccessMask =
+            VK_ACCESS_SHADER_WRITE_BIT | VK_ACCESS_COLOR_ATTACHMENT_WRITE_BIT;
+        edge_pass_depend_on_lighting_pass.dstAccessMask =
+            VK_ACCESS_SHADER_READ_BIT | VK_ACCESS_COLOR_ATTACHMENT_READ_BIT;
+        edge_pass_depend_on_lighting_pass.dependencyFlags = VK_DEPENDENCY_BY_REGION_BIT;
+
+        VkSubpassDependency& color_grading_pass_depend_on_edge_pass = dependencies[4];
+        color_grading_pass_depend_on_edge_pass.srcSubpass           = _main_camera_subpass_tone_mapping;
+        color_grading_pass_depend_on_edge_pass.dstSubpass           = _main_camera_subpass_color_grading;
+        color_grading_pass_depend_on_edge_pass.srcStageMask =
+            VK_PIPELINE_STAGE_FRAGMENT_SHADER_BIT | VK_PIPELINE_STAGE_COLOR_ATTACHMENT_OUTPUT_BIT;
+        color_grading_pass_depend_on_edge_pass.dstStageMask =
+            VK_PIPELINE_STAGE_FRAGMENT_SHADER_BIT | VK_PIPELINE_STAGE_COLOR_ATTACHMENT_OUTPUT_BIT;
+        color_grading_pass_depend_on_edge_pass.srcAccessMask =
+            VK_ACCESS_SHADER_WRITE_BIT | VK_ACCESS_COLOR_ATTACHMENT_WRITE_BIT;
+        color_grading_pass_depend_on_edge_pass.dstAccessMask =
+            VK_ACCESS_SHADER_READ_BIT | VK_ACCESS_COLOR_ATTACHMENT_READ_BIT;
+        color_grading_pass_depend_on_edge_pass.dependencyFlags = VK_DEPENDENCY_BY_REGION_BIT;
         VkSubpassDependency& ui_pass_depend_on_color_grading_pass = dependencies[5];
         ui_pass_depend_on_color_grading_pass.srcSubpass           = _main_camera_subpass_color_grading;
         ui_pass_depend_on_color_grading_pass.dstSubpass           = _main_camera_subpass_ui;
@@ -2164,6 +2210,123 @@ namespace Pilot
         m_p_vulkan_context->_vkCmdNextSubpass(m_command_info._current_command_buffer, VK_SUBPASS_CONTENTS_INLINE);
 
         tone_mapping_pass.draw();
+
+        m_p_vulkan_context->_vkCmdNextSubpass(m_command_info._current_command_buffer, VK_SUBPASS_CONTENTS_INLINE);
+
+        color_grading_pass.draw();
+
+        m_p_vulkan_context->_vkCmdNextSubpass(m_command_info._current_command_buffer, VK_SUBPASS_CONTENTS_INLINE);
+
+        VkClearAttachment clear_attachments[1];
+        clear_attachments[0].aspectMask                  = VK_IMAGE_ASPECT_COLOR_BIT;
+        clear_attachments[0].colorAttachment             = 0;
+        clear_attachments[0].clearValue.color.float32[0] = 0.0;
+        clear_attachments[0].clearValue.color.float32[1] = 0.0;
+        clear_attachments[0].clearValue.color.float32[2] = 0.0;
+        clear_attachments[0].clearValue.color.float32[3] = 0.0;
+        VkClearRect clear_rects[1];
+        clear_rects[0].baseArrayLayer     = 0;
+        clear_rects[0].layerCount         = 1;
+        clear_rects[0].rect.offset.x      = 0;
+        clear_rects[0].rect.offset.y      = 0;
+        clear_rects[0].rect.extent.width  = m_p_vulkan_context->_swapchain_extent.width;
+        clear_rects[0].rect.extent.height = m_p_vulkan_context->_swapchain_extent.height;
+        m_p_vulkan_context->_vkCmdClearAttachments(m_command_info._current_command_buffer,
+                                                   sizeof(clear_attachments) / sizeof(clear_attachments[0]),
+                                                   clear_attachments,
+                                                   sizeof(clear_rects) / sizeof(clear_rects[0]),
+                                                   clear_rects);
+
+        drawAxis();
+
+        ui_pass.draw(ui_state);
+
+        m_p_vulkan_context->_vkCmdNextSubpass(m_command_info._current_command_buffer, VK_SUBPASS_CONTENTS_INLINE);
+
+        combine_ui_pass.draw();
+
+        m_p_vulkan_context->_vkCmdEndRenderPass(m_command_info._current_command_buffer);
+    }
+
+        void PMainCameraPass::draw(PColorGradingPass& color_grading_pass,
+                               PEdgePass&  edge_pass,
+                               PUIPass&           ui_pass,
+                               PCombineUIPass&    combine_ui_pass,
+                               uint32_t           current_swapchain_image_index,
+                               void*              ui_state)
+    {
+        {
+            VkRenderPassBeginInfo renderpass_begin_info {};
+            renderpass_begin_info.sType             = VK_STRUCTURE_TYPE_RENDER_PASS_BEGIN_INFO;
+            renderpass_begin_info.renderPass        = _framebuffer.render_pass;
+            renderpass_begin_info.framebuffer       = m_swapchain_framebuffers[current_swapchain_image_index];
+            renderpass_begin_info.renderArea.offset = {0, 0};
+            renderpass_begin_info.renderArea.extent = m_p_vulkan_context->_swapchain_extent;
+
+            VkClearValue clear_values[_main_camera_pass_attachment_count];
+            clear_values[_main_camera_pass_gbuffer_a].color          = {{0.0f, 0.0f, 0.0f, 0.0f}};
+            clear_values[_main_camera_pass_gbuffer_b].color          = {{0.0f, 0.0f, 0.0f, 0.0f}};
+            clear_values[_main_camera_pass_gbuffer_c].color          = {{0.0f, 0.0f, 0.0f, 0.0f}};
+            clear_values[_main_camera_pass_backup_buffer_odd].color  = {{0.0f, 0.0f, 0.0f, 1.0f}};
+            clear_values[_main_camera_pass_backup_buffer_even].color = {{0.0f, 0.0f, 0.0f, 1.0f}};
+            clear_values[_main_camera_pass_depth].depthStencil       = {1.0f, 0};
+            clear_values[_main_camera_pass_swap_chain_image].color   = {{0.0f, 0.0f, 0.0f, 1.0f}};
+            renderpass_begin_info.clearValueCount                    = (sizeof(clear_values) / sizeof(clear_values[0]));
+            renderpass_begin_info.pClearValues                       = clear_values;
+
+            m_p_vulkan_context->_vkCmdBeginRenderPass(
+                m_command_info._current_command_buffer, &renderpass_begin_info, VK_SUBPASS_CONTENTS_INLINE);
+        }
+
+        if (m_render_config._enable_debug_untils_label)
+        {
+            VkDebugUtilsLabelEXT label_info = {
+                VK_STRUCTURE_TYPE_DEBUG_UTILS_LABEL_EXT, NULL, "BasePass", {1.0f, 1.0f, 1.0f, 1.0f}};
+            m_p_vulkan_context->_vkCmdBeginDebugUtilsLabelEXT(m_command_info._current_command_buffer, &label_info);
+        }
+
+        drawMeshGbuffer();
+
+        if (m_render_config._enable_debug_untils_label)
+        {
+            m_p_vulkan_context->_vkCmdEndDebugUtilsLabelEXT(m_command_info._current_command_buffer);
+        }
+
+        m_p_vulkan_context->_vkCmdNextSubpass(m_command_info._current_command_buffer, VK_SUBPASS_CONTENTS_INLINE);
+
+        if (m_render_config._enable_debug_untils_label)
+        {
+            VkDebugUtilsLabelEXT label_info = {
+                VK_STRUCTURE_TYPE_DEBUG_UTILS_LABEL_EXT, NULL, "Deferred Lighting", {1.0f, 1.0f, 1.0f, 1.0f}};
+            m_p_vulkan_context->_vkCmdBeginDebugUtilsLabelEXT(m_command_info._current_command_buffer, &label_info);
+        }
+
+        drawDeferredLighting();
+
+        if (m_render_config._enable_debug_untils_label)
+        {
+            m_p_vulkan_context->_vkCmdEndDebugUtilsLabelEXT(m_command_info._current_command_buffer);
+        }
+
+        m_p_vulkan_context->_vkCmdNextSubpass(m_command_info._current_command_buffer, VK_SUBPASS_CONTENTS_INLINE);
+
+        if (m_render_config._enable_debug_untils_label)
+        {
+            VkDebugUtilsLabelEXT label_info = {
+                VK_STRUCTURE_TYPE_DEBUG_UTILS_LABEL_EXT, NULL, "Forward Lighting", {1.0f, 1.0f, 1.0f, 1.0f}};
+            m_p_vulkan_context->_vkCmdBeginDebugUtilsLabelEXT(m_command_info._current_command_buffer, &label_info);
+        }
+
+        drawBillboardParticle();
+
+        if (m_render_config._enable_debug_untils_label)
+        {
+            m_p_vulkan_context->_vkCmdEndDebugUtilsLabelEXT(m_command_info._current_command_buffer);
+        }
+
+        m_p_vulkan_context->_vkCmdNextSubpass(m_command_info._current_command_buffer, VK_SUBPASS_CONTENTS_INLINE);
+
+        edge_pass.draw();
 
         m_p_vulkan_context->_vkCmdNextSubpass(m_command_info._current_command_buffer, VK_SUBPASS_CONTENTS_INLINE);
 

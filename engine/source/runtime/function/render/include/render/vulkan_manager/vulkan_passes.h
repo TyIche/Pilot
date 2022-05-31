@@ -154,7 +154,12 @@ namespace Pilot
                   PCombineUIPass&    combine_ui_pass,
                   uint32_t           current_swapchain_image_index,
                   void*              ui_state);
-
+        void draw(PColorGradingPass& color_grading_pass,
+                  PEdgePass&         edge_pass,
+                  PUIPass&           ui_pass,
+                  PCombineUIPass&    combine_ui_pass,
+                  uint32_t           current_swapchain_image_index,
+                  void*              ui_state);
         // legacy
         void drawForward(PColorGradingPass& color_grading_pass,
                          PToneMappingPass&  tone_mapping_pass,
